@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:transitionGroup="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:textSize="50dp"
+        android:textColor="#222"
+        android:text="Text to Speech"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:layout_alignParentTop="true"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="120dp"
+        android:hint="Enter Text"
+        android:textColor="#f10"
+        android:textColorHint="#000" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Text to speech"
+        android:id="@+id/engButton"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="40dp"
+        android:background="#aaa"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+
